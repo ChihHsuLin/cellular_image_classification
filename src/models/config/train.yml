@@ -1,0 +1,15 @@
+epoch: 200
+ckpt_epoch:
+patient: 10
+ckpt_path: 'ckpts/mishefficientnet_b4_3_3_5_1'
+model_name: 'mishefficientnet-b4'
+balance_exp: False
+dataset_class: 'SubimageDataset'
+lr: 0.001
+batch_size: 20
+eval_batch_size: 16
+freeze_eval: True
+normalize: self
+valid_exp: ['HEPG2-03', 'HUVEC-03', 'RPE-05', 'U2OS-01']
+skip_exp: ['HUVEC-05']
+optimizer: 'ranger'

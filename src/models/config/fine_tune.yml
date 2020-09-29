@@ -1,0 +1,18 @@
+epoch: 100
+ckpt_epoch:
+patient: 10
+ckpt_full_path: 'ckpts/mishefficientnet_b4_3_3_5_1/'
+model_name: 'mishefficientnet-b4'
+cell_type: ['U2OS', 'RPE', 'HEPG2', 'HUVEC']
+output_path: 'ckpts/mishefficientnet_b4_3_3_5_1_ft/'
+dataset_class: 'SubimageDataset'
+criterion: 'ce'
+lr: 0.001
+batch_size: 20
+eval_batch_size: 12
+freeze_eval: False
+normalize: self
+valid_exp: ['HEPG2-03', 'HUVEC-03', 'RPE-05', 'U2OS-01']
+skip_exp: ['HUVEC-05']
+#optimizer: 'sgd_swa'
+#load_optimizer: False

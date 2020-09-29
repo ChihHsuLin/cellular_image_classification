@@ -1,0 +1,31 @@
+- MedianBlur: {
+    blur_limit: 3,
+    p: 0.684724609560557
+  }
+- GaussianBlur: {
+    blur_limit: 5,
+    p: 0.9466754825881096
+  }
+- GridDistortion: {
+    num_steps: 2,
+    distort_limit: 0.10605380243022373,
+    p: 0.06001708138422536
+  }
+- ShiftScaleRotate: {
+    shift_limit: 0.07556258699745953,
+    scale_limit: 0.0,
+    rotate_limit: 10,
+    p: 0.035903972129629175
+  }
+- Rotate: {
+    limit: 2,
+    p: 0.1431901443775192
+  }
+- CoarseDropout: {
+    max_holes: 6,
+    p: 0.9292528008119367,
+  }
+- RandomScale: {
+    scale_limit: 0.1154845934312503,
+    p: 0.6911726672927758
+  }

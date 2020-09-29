@@ -1,0 +1,17 @@
+general:
+  ensemble_files:
+  - efficientnet_b4_ft_all
+  - mishefficientnet_b4_3_3_5_1_ft_all
+  - mishefficientnet_b3_5_9_1_1_ft_all
+  - mishefficientnet_b3_5_9_1_1_fix_ft_all
+  - mishefficientnet_b3_4_2_3_2_ft_all
+  - mishefficientnet_b2_v2_ft_sgd_swa_all
+u2os:
+  ensemble_files:
+  - efficientnet_b4_ft_all
+  - mishefficientnet_b4_3_3_5_1_ft_all
+  - mishefficientnet_b3_5_9_1_1_ft_all
+  - mishefficientnet_b3_5_9_1_1_fix_ft_all
+  - mishefficientnet_b2_v2_ft_sgd_swa_all
+output: mixmish_0926_mean
+

@@ -1,0 +1,15 @@
+input_size: 512
+output: 'mishefficientnet_b4_3_3_5_1_ft'
+dataset: 'test'
+# Given a path, it will get the best cell type-specific model under the directory
+model: 'ckpts/mishefficientnet_b4_3_3_5_1_ft/'
+# Given a list of paths, it will get the model tar matched the cell_type order
+ckpt_full_path: 'ckpts/mishefficientnet_b4_3_3_5_1_ft/'
+cell_type: ['RPE', 'HEPG2', 'HUVEC', 'U2OS']
+model_name: 'mishefficientnet-b4'
+format: 'raw'
+dataset_class: 'SubimageDataset'
+batch_size: 32
+precision: 8
+normalize: self
+tta: [True, False, False, False]
